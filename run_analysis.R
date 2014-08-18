@@ -24,7 +24,7 @@
   
   #################################### Step4 ########################################
   
-  colnames(dataset)=c(as.character(j$V2), "activities", "subject")
+  colnames(dataset)=c(as.character(feature_files$V2), "activities", "subject")
   
   #################################### Step5 ########################################
   
@@ -32,10 +32,6 @@
   s2=split(dataset, dataset$subject)
   average_activities=sapply(s1, function(x) colMeans(x[, -c(562, 563)]))
   average_subject=sapply(s2, function(x) colMeans(x[, -c(562, 563)]))
-  if(!file.exists("tidy_dataset")){
-    dir.create("tidy_dataset")
-  }
-  write.table(average_activities,"./tidy_dataset/average_activities_data.txt")
-  write.table(average_subject,"./tidy_dataset/average_subject_data.txt")
-  
+  average=cbind(average_activities, average_subject)
+  write.table(average,"tidy_dataset.txt", row.names = FALSE)
   
