@@ -16,7 +16,7 @@ These files are among 12.The last three are not in Inertial Signals are those in
 
 ####################################### Step3 ###################################################
 -activity_files's is a database activity_labels.txt 
--the loop "for" is use to replace the name codes, taking into account in the positioning of dataset activity.
+-the loop "for" is use to replace the codes names in dataset.
 
 ####################################### Step4 ###################################################
 -Label the columns with feature_files and completes the last two names with activities and subjet 
@@ -25,4 +25,5 @@ following the order of colones defined in the dataset.
 ####################################### Step5 ###################################################
 -average_activities calculates averages by variable activity while deleted the last two colones which is most needed 
 -average_subject same as for average_activities 
--The loop "if" creates a file where the files tidy data set recorded.
+-The tidy data set is in tidy_dataset.txt
+You can read this on R. 
