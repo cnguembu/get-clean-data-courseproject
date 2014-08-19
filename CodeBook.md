@@ -1,6 +1,6 @@
-================================================================================================
+=================================================================================================
 Above all we must define a new directory pointed to "getdata ProjectFiles-HAR-UCI Dataset" (unzip getdata-ProjectFiles UCI-file Dataset.zip HAR).
-======================================= Step1 ===================================================
+=================================================================================================
 -y is a variable that contains the names of files with "training" in UCI Dataset HAR; 
 These files are among 12.The last three are not in Inertial Signals are those interressent remenber that we we want to merging training (not train) and test set; 
 -x such that y the difference that In contains the names of files with "test"; 
